@@ -1,0 +1,18 @@
+Bug1:- Incorrect error message is displayed when account number less than 6 or more than 9 characters for AU country code
+	Actual Message- Length of account_number should be between 7 and 11 when bank_country_code is 'US'
+	Expected Message-Length of account_number should be between 6 and 9 when bank_country_code is 'AU'
+  	Same is the case for country code "CN"
+
+Bug2:- US account details are saved successfully even if aba is not provided in the payload
+
+Bug3:- Bank Details are saved successfully even if the account_name, account_number, bsb fields contains only spaces.
+ Sample payload:
+{
+	"payment_method":"LOCAL",
+	"bank_country_code":"AU",
+	"account_name":"        ",
+	"account_number":"         ",
+	"swift_code":"",
+	"aba":"",
+	"bsb":"      "
+}

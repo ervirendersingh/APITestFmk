@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="30" result="Failed" total="30" passed="25" failed="5" inconclusive="0" skipped="0" asserts="30" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-02-21 15:54:54Z" end-time="2018-02-21 15:55:15Z" duration="20.094787">
+  <command-line><![CDATA[nunit3-console.exe  C:\AirWallex\APITestFmk\APITestFmk\bin\Debug\APITestFmk.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1031" name="APITestFmk.dll" fullname="C:\AirWallex\APITestFmk\APITestFmk\bin\Debug\APITestFmk.dll" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2018-02-21 15:55:05Z" end-time="2018-02-21 15:55:14Z" duration="9.407680" total="30" passed="25" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="30">
+    <environment framework-version="3.9.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\AirWallex\APITestFmk\packages\NUnit.ConsoleRunner.3.8.0\tools" machine-name="DESKTOP-IIFPKT5" user="virender" user-domain="DESKTOP-IIFPKT5" culture="en-AU" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\AirWallex\APITestFmk\packages\NUnit.ConsoleRunner.3.8.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="5040" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1032" name="APITestFmk" fullname="APITestFmk" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2018-02-21 15:55:05Z" end-time="2018-02-21 15:55:14Z" duration="9.268896" total="30" passed="25" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="30">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1033" name="Tests" fullname="APITestFmk.Tests" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2018-02-21 15:55:05Z" end-time="2018-02-21 15:55:14Z" duration="9.265164" total="30" passed="25" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="30">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1034" name="Specs" fullname="APITestFmk.Tests.Specs" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2018-02-21 15:55:05Z" end-time="2018-02-21 15:55:14Z" duration="9.265019" total="30" passed="25" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="30">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="0-1000" name="CollectBankInfoAPISpecsFeature" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" testcasecount="30" result="Failed" site="Child" start-time="2018-02-21 15:55:05Z" end-time="2018-02-21 15:55:14Z" duration="9.192564" total="30" passed="25" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="30">
+            <properties>
+              <property name="Description" value="CollectBankInfoAPISpecs" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[-> Using app.config
+]]></output>
+            <test-case id="0-1001" name="CollectBankInfoAPI001_VerifyThatUSBankAccountDetailsAreSavedSuccessfully" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI001_VerifyThatUSBankAccountDetailsAreSavedSuccessfully" methodname="CollectBankInfoAPI001_VerifyThatUSBankAccountDetailsAreSavedSuccessfully" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1052207801" result="Passed" start-time="2018-02-21 15:55:07Z" end-time="2018-02-21 15:55:12Z" duration="4.405262" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI001_Verify that US bank account details are saved successfully" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123            | ISBCUSBJ   | 11122233A |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (3.2s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1002" name="CollectBankInfoAPI002_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsIncorrect" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI002_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsIncorrect" methodname="CollectBankInfoAPI002_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsIncorrect" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1970944389" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.105477" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI002_Verify that bank account details are not saved when Payment method is incorrect" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method  | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT_Incorrect | US                | Test User1   | 123            | ISBCUSBJ   | 11122233A |     |
+{"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'payment_method' ...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1003" name="CollectBankInfoAPI003_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsNotProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI003_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsNotProvided" methodname="CollectBankInfoAPI003_VerifyThatBankAccountDetailsAreNotSavedWhenPaymentMethodIsNotProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1487394735" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.054370" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI003_Verify that bank account details are not saved when Payment method is not provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  |                | US                | Test User1   | 123            | ISBCUSBJ   | 11122233A |     |
+{"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'payment_method' ...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1004" name="CollectBankInfoAPI004_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndNoSwiftCodeIsProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI004_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndNoSwiftCodeIsProvided" methodname="CollectBankInfoAPI004_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndNoSwiftCodeIsProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="339556288" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.058737" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI004_Verify that US bank account details are saved successfully when Payment method is Local and no Swift Code is provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | LOCAL          | US                | Test User1   | 123            |            | 11122233A |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1005" name="CollectBankInfoAPI005_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndSwiftCodeIsProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI005_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndSwiftCodeIsProvided" methodname="CollectBankInfoAPI005_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenPaymentMethodIsLocalAndSwiftCodeIsProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="524863058" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.046608" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI005_Verify that US bank account details are saved successfully when Payment method is Local and Swift Code is provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | LOCAL          | US                | Test User1   | 123            | ISBCUSBJ   | 11122233A |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.0s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1006" name="CollectBankInfoAPI006_VerifyThatBankAccountDetailsAreNotSavedWhenBankCountryCodeIsNotProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI006_VerifyThatBankAccountDetailsAreNotSavedWhenBankCountryCodeIsNotProvided" methodname="CollectBankInfoAPI006_VerifyThatBankAccountDetailsAreNotSavedWhenBankCountryCodeIsNotProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1187413805" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.064955" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI006_Verify that bank account details are not saved when bank country code is not provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          |                   | Test User1   | 123            | ISBCUSBJ   | 11122233A |     |
+{"error":"'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'bank_country_cod...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1007" name="CollectBankInfoAPI007_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsNotProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI007_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsNotProvided" methodname="CollectBankInfoAPI007_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsNotProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="232113203" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.144475" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI007_Verify that bank account details are not saved when account name is not provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                |              | 123            | ISBCUSBJ   | 11122233A |     |
+{"error":"'account_name' is required"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'account_name' is required" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'account_name' is...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1008" name="CollectBankInfoAPI008_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNumberIsNotProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI008_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNumberIsNotProvided" methodname="CollectBankInfoAPI008_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNumberIsNotProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1393421993" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.061291" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI008_Verify that bank account details are not saved when account number is not provided" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   |                | ISBCUSBJ   | 11122233A |     |
+{"error":"'account_number' is required"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'account_number' is required" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'account_number' ...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1009" name="CollectBankInfoAPI009_VerifyThatBankAccountDetailsAreNotSavedWhenSwiftCodeIsNotProvidedAndPaymentMethodIsSwift" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI009_VerifyThatBankAccountDetailsAreNotSavedWhenSwiftCodeIsNotProvidedAndPaymentMethodIsSwift" methodname="CollectBankInfoAPI009_VerifyThatBankAccountDetailsAreNotSavedWhenSwiftCodeIsNotProvidedAndPaymentMethodIsSwift" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1783978476" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.080599" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI009_Verify that bank account details are not saved when Swift Code is not provided and Payment method is Swift" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123            |            | 11122233A |     |
+{"error":"'swift_code' is required when payment method is 'SWIFT'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'swift_code' is required when payment method is 'SWIFT'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'swift_code' is r...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1010" name="CollectBankInfoAPI010_VerifyThatBankAccountDetailsAreNotSavedWhenBsbIsNotProvidedAndBankCountryCodeIsAU" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI010_VerifyThatBankAccountDetailsAreNotSavedWhenBsbIsNotProvidedAndBankCountryCodeIsAU" methodname="CollectBankInfoAPI010_VerifyThatBankAccountDetailsAreNotSavedWhenBsbIsNotProvidedAndBankCountryCodeIsAU" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="10311816" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.087642" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI010_Verify that bank account details are not saved when bsb is not provided and bank country code is AU" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | AU                | Test User1   | 12367856       | ISBCAUBJ   |     |     |
+{"error":"'bsb' is required when bank country code is 'AU'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'bsb' is required when bank country code is 'AU'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("'bsb' is required...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1011" name="CollectBankInfoAPI011_VerifyThatUSBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan17CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI011_VerifyThatUSBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan17CharactersLong" methodname="CollectBankInfoAPI011_VerifyThatUSBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan17CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="2052738745" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.154044" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI011_Verify that US bank account details are not saved when account number is more than 17 characters long" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number     | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123456789012345678 | ISBCUSBJ   | 11122233A |     |
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.2s)
+Then Error Message "Length of account_number should be between 7 and 11 when bank_country_code is 'US'" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of account...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1012" name="CollectBankInfoAPI012_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenAccountNumberIs17CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI012_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenAccountNumberIs17CharactersLong" methodname="CollectBankInfoAPI012_VerifyThatUSBankAccountDetailsAreSavedSuccessfullyWhenAccountNumberIs17CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="2134501985" result="Passed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:12Z" duration="0.059461" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI012_Verify that US bank account details are saved successfully when account number is 17 characters long" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number    | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 1234567890123ABCD | ISBCUSBJ   | 11122233A |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1013" name="CollectBankInfoAPI013_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan6CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI013_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan6CharactersLong" methodname="CollectBankInfoAPI013_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan6CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="192193535" result="Failed" start-time="2018-02-21 15:55:12Z" end-time="2018-02-21 15:55:13Z" duration="0.760265" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI013_Verify that AU bank account details are not saved when account number is less than 6 characters long" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI013_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan6CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 80
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb    |
+  | SWIFT          | AU                | Test User1   | 123            | ISBCAUBJ   |     | 887221 |
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of account_number should be between 6 and 9 when bank_country_code is 'AU'" is returned
+-> error:   Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI013_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan6CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 80
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1014" name="CollectBankInfoAPI014_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan9CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI014_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan9CharactersLong" methodname="CollectBankInfoAPI014_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan9CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1011387322" result="Failed" start-time="2018-02-21 15:55:13Z" end-time="2018-02-21 15:55:13Z" duration="0.063618" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI014_Verify that AU bank account details are not saved when account number is more than 9 characters long" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI014_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan9CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 86
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb    |
+  | SWIFT          | AU                | Test User1   | 1234567890     | ISBCAUBJ   |     | 887221 |
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.0s)
+Then Error Message "Length of account_number should be between 6 and 9 when bank_country_code is 'AU'" is returned
+-> error:   Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI014_VerifyThatAUBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan9CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 86
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1015" name="CollectBankInfoAPI015_VerifyThatAUBankAccountDetailsAreSavedSuccessfully" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI015_VerifyThatAUBankAccountDetailsAreSavedSuccessfully" methodname="CollectBankInfoAPI015_VerifyThatAUBankAccountDetailsAreSavedSuccessfully" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1295066371" result="Passed" start-time="2018-02-21 15:55:13Z" end-time="2018-02-21 15:55:13Z" duration="0.053360" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI015_Verify that AU bank account details are saved successfully" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb    |
+  | SWIFT          | AU                | Test User1   | 123ABCDE       | ISBCAUBJ   |     | 887221 |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1016" name="CollectBankInfoAPI016_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan8CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI016_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan8CharactersLong" methodname="CollectBankInfoAPI016_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan8CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1696074623" result="Failed" start-time="2018-02-21 15:55:13Z" end-time="2018-02-21 15:55:13Z" duration="0.093442" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI016_Verify that CN bank account details are not saved when account number is less than 8 characters long" />
+              </properties>
+              <failure>
+                <message><![CDATA[  String lengths are both 82. Strings differ at index 43.
+  Expected: "...ber should be between 8 and 20 when bank_country_code is 'CN'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI016_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan8CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 98
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | AU                | Test User1   | 123            | ISBCAUBJ   |     |     |
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of account_number should be between 8 and 20 when bank_country_code is 'CN'" is returned
+-> error:   String lengths are both 82. Strings differ at index 43.
+  Expected: "...ber should be between 8 and 20 when bank_country_code is 'CN'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  String lengths are both 82. Strings differ at index 43.
+  Expected: "...ber should be between 8 and 20 when bank_country_code is 'CN'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI016_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsLessThan8CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 98
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1017" name="CollectBankInfoAPI017_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan20CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI017_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan20CharactersLong" methodname="CollectBankInfoAPI017_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan20CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1353616724" result="Failed" start-time="2018-02-21 15:55:13Z" end-time="2018-02-21 15:55:14Z" duration="0.085421" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI017_Verify that CN bank account details are not saved when account number is more than 20 characters long" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI017_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan20CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 104
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number           | Swift_Code | aba | bsb |
+  | SWIFT          | AU                | Test User1   | 1234567890ABCDEFGHIJK223 | ISBCCNBJ   |     |     |
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of account_number should be between 6 and 9 when bank_country_code is 'AU'" is returned
+-> error:   Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected string length 81 but was 82. Strings differ at index 43.
+  Expected: "...ber should be between 6 and 9 when bank_country_code is 'AU'"
+  But was:  "...ber should be between 7 and 11 when bank_country_code is 'US'"
+  ------------------------------------^
+]]></message>
+                  <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI017_VerifyThatCNBankAccountDetailsAreNotSavedWhenAccountNumberIsMoreThan20CharactersLong() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 104
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1018" name="CollectBankInfoAPI018_VerifyThatCNBankAccountDetailsAreSavedSuccessfully" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI018_VerifyThatCNBankAccountDetailsAreSavedSuccessfully" methodname="CollectBankInfoAPI018_VerifyThatCNBankAccountDetailsAreSavedSuccessfully" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1823238114" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.093320" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI018_Verify that CN bank account details are saved successfully" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | CN                | Test User1   | 123ABCDE       | ISBCCNBJ   |     |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Success Message "Bank details saved" is returned
+-> done: CollectBankInfoAPISteps.ThenSuccessMessageIsReturned("Bank details saved") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1019" name="CollectBankInfoAPI019_VerifyThatCNBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI019_VerifyThatCNBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" methodname="CollectBankInfoAPI019_VerifyThatCNBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="271003087" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.091217" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI019_Verify that CN bank account details are not saved when Swift Code is incorrect" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | CN                | Test User1   | 123ABCDE       | ISBCAUBJ   |     |     |
+{"error":"The swift code is not valid for the given bank country code: CN"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "The swift code is not valid for the given bank country code: CN" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("The swift code is...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1020" name="CollectBankInfoAPI020_VerifyThatAUBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI020_VerifyThatAUBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" methodname="CollectBankInfoAPI020_VerifyThatAUBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="400909078" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.051455" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI020_Verify that AU bank account details are not saved when Swift Code is incorrect" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb    |
+  | SWIFT          | AU                | Test User1   | 123ABCDE       | ISBCCNBJ   |     | 567456 |
+{"error":"The swift code is not valid for the given bank country code: AU"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.0s)
+Then Error Message "The swift code is not valid for the given bank country code: AU" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("The swift code is...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1021" name="CollectBankInfoAPI021_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI021_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" methodname="CollectBankInfoAPI021_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsIncorrect" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="780288527" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.071184" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI021_Verify that US bank account details are not saved when Swift Code is incorrect" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123ABCDE       | ISBCCNBJ   | 11122233A |     |
+{"error":"The swift code is not valid for the given bank country code: US"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "The swift code is not valid for the given bank country code: US" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("The swift code is...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1022" name="CollectBankInfoAPI022_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsMoreThan11Characters" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI022_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsMoreThan11Characters" methodname="CollectBankInfoAPI022_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsMoreThan11Characters" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="996787056" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.058737" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI022_Verify that US bank account details are not saved when Swift Code is more than 11 characters" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code     | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123ABCDE       | ISBCUSBJgggggg | 11122233A |     |
+{"error":"Length of 'swift_code' should be either 8 or 11"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of 'swift_code' should be either 8 or 11" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'swift_...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1023" name="CollectBankInfoAPI023_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsLessThan8Characters" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI023_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsLessThan8Characters" methodname="CollectBankInfoAPI023_VerifyThatUSBankAccountDetailsAreNotSavedWhenSwiftCodeIsLessThan8Characters" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="81010707" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.063801" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI023_Verify that US bank account details are not saved when Swift Code is less than 8 characters" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | Test User1   | 123ABCDEFGHI   | ISBCUS     | 11122233A |     |
+{"error":"Length of 'swift_code' should be either 8 or 11"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of 'swift_code' should be either 8 or 11" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'swift_...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1024" name="CollectBankInfoAPI024_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsLessThan6CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI024_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsLessThan6CharactersLong" methodname="CollectBankInfoAPI024_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsLessThan6CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1006563296" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.067430" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI024_Verify that AU bank account details are not saved when bsb number is less than 6 characters long" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | AU                | Test User1   | 1234567        | ISBCAUBJ   |     | 887 |
+{"error":"Length of 'bsb' should be 6"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of 'bsb' should be 6" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'bsb' s...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1025" name="CollectBankInfoAPI025_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsMoreThan6CharactersLong" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI025_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsMoreThan6CharactersLong" methodname="CollectBankInfoAPI025_VerifyThatAUBankAccountDetailsAreNotSavedWhenBsbNumberIsMoreThan6CharactersLong" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="918520550" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.047655" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI025_Verify that AU bank account details are not saved when bsb number is more than 6 characters long" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb     |
+  | SWIFT          | AU                | Test User1   | 1234567        | ISBCAUBJ   |     | 8875678 |
+{"error":"Length of 'bsb' should be 6"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.0s)
+Then Error Message "Length of 'bsb' should be 6" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'bsb' s...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1026" name="CollectBankInfoAPI026_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsNotProvided" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI026_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsNotProvided" methodname="CollectBankInfoAPI026_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsNotProvided" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1714282314" result="Failed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.068533" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI026_Verify that US bank account details are not saved when aba is not provided" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 48 but was 18. Strings differ at index 0.
+  Expected: "'aba' is required when bank country code is 'US'"
+  But was:  "Bank details saved"
+  -----------^
+]]></message>
+                <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI026_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsNotProvided() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 159
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | US                | Test User1   | 123            | ISBCUSBJ   |     |     |
+{"success":"Bank details saved"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "'aba' is required when bank country code is 'US'" is returned
+-> error:   Expected string length 48 but was 18. Strings differ at index 0.
+  Expected: "'aba' is required when bank country code is 'US'"
+  But was:  "Bank details saved"
+  -----------^
+
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected string length 48 but was 18. Strings differ at index 0.
+  Expected: "'aba' is required when bank country code is 'US'"
+  But was:  "Bank details saved"
+  -----------^
+]]></message>
+                  <stack-trace><![CDATA[   at APITestFmk.Tests.Steps.CollectBankInfoAPISteps.ThenErrorMessageIsReturned(String msg) in C:\AirWallex\APITestFmk\APITestFmk\Tests\Steps\CollectBankInfoAPISteps.cs:line 36
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.ScenarioCleanup()
+   at APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI026_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsNotProvided() in C:\AirWallex\APITestFmk\APITestFmk\Tests\Specs\CollectBankInfoAPISpecs.feature:line 159
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1027" name="CollectBankInfoAPI027_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsLessThan9Characters" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI027_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsLessThan9Characters" methodname="CollectBankInfoAPI027_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsLessThan9Characters" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1539675256" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.055851" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI027_Verify that US bank account details are not saved when aba is less than 9 characters" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba | bsb |
+  | SWIFT          | US                | Test User1   | 123            | ISBCUSBJ   | 123 |     |
+{"error":"Length of 'aba' should be 9"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of 'aba' should be 9" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'aba' s...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1028" name="CollectBankInfoAPI028_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsMoreThan9Characters" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI028_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsMoreThan9Characters" methodname="CollectBankInfoAPI028_VerifyThatUSBankAccountDetailsAreNotSavedWhenAbaIsMoreThan9Characters" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="1222206890" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.046676" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI028_Verify that US bank account details are not saved when aba is more than 9 characters" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba          | bsb |
+  | SWIFT          | US                | Test User1   | 123            | ISBCUSBJ   | 123456789ABC |     |
+{"error":"Length of 'aba' should be 9"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.0s)
+Then Error Message "Length of 'aba' should be 9" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of 'aba' s...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1029" name="CollectBankInfoAPI029_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOf1Character" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI029_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOf1Character" methodname="CollectBankInfoAPI029_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOf1Character" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="117938208" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.055373" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI029_Verify that bank account details are not saved when account name is of 1 character" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | T            | 123            | ISBCUSBJ   | 33311122A |     |
+{"error":"Length of account_name should be between 2 and 10"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of account_name should be between 2 and 10" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of account...") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="0-1030" name="CollectBankInfoAPI030_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOfMoreThan10Characters" fullname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature.CollectBankInfoAPI030_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOfMoreThan10Characters" methodname="CollectBankInfoAPI030_VerifyThatBankAccountDetailsAreNotSavedWhenAccountNameIsOfMoreThan10Characters" classname="APITestFmk.Tests.Specs.CollectBankInfoAPISpecsFeature" runstate="Runnable" seed="172953590" result="Passed" start-time="2018-02-21 15:55:14Z" end-time="2018-02-21 15:55:14Z" duration="0.056219" asserts="1">
+              <properties>
+                <property name="Description" value="CollectBankInfoAPI030_Verify that bank account details are not saved when account name is of more than 10 characters" />
+              </properties>
+              <output><![CDATA[Given Collect Bank Account Info API is called with details
+  --- table step argument ---
+  | Payment_Method | Bank_Country_Code | Account_Name | Account_Number | Swift_Code | aba       | bsb |
+  | SWIFT          | US                | T1234567890  | 123            | ISBCUSBJ   | 33311122A |     |
+{"error":"Length of account_name should be between 2 and 10"}
+-> done: CollectBankInfoAPISteps.GivenCollectBankAccountInfoAPIIsCalledWithDetails(<table>) (0.1s)
+Then Error Message "Length of account_name should be between 2 and 10" is returned
+-> done: CollectBankInfoAPISteps.ThenErrorMessageIsReturned("Length of account...") (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
